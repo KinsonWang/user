@@ -46,6 +46,7 @@ public class UserController {
 			date = sdf.parse(birthday);
 		} catch (ParseException e) {
 			e.printStackTrace();
+			System.out.println("asda");
 		}
 		User user = new User(username,password,Integer.parseInt(age),mail,date);
 		registerService.insertUser(user);
